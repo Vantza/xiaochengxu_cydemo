@@ -1,0 +1,45 @@
+/* pages/mypage/mypage.wxss */
+.titlename-frame {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+
+.titleimg-frame {
+  display: flex;
+  width: 30%;
+  height: 100%;
+}
+
+.titlesection {
+  display:flex;
+  flex-direction: row;
+  height: 150rpx;
+  width: 100%;
+}
+
+.fullname-name {
+  font-size: 34rpx;
+  font-family: Arial,Verdana,Sans-serif;
+  font-weight: bold;
+}
+
+.fullname-tag {
+  font-size: 24rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: gray;
+}
+
+.style-hr {
+  height: 12rpx;
+  border: 0;
+  box-shadow: inset 0 12rpx 12rpx -12rpx rgba(0, 0, 0, 0.5);
+  margin-top: 15rpx;
+}
+
+.labelgroup-body {
+  display: flex;
+  flex-direction: column;
+  margin: 15rpx 5rpx 5rpx 15rpx;
+}

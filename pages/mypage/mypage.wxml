@@ -1,0 +1,19 @@
+<!--pages/mypage/mypage.wxml-->
+<view class="section">
+  <!--<view class="section__title">vertical scroll</view>-->
+  <view class="titlesection">
+    <view class="titlename-frame">
+      <view class="fullname-name">三可体育用品零售店</view>
+      <view class="fullname-tag">购物-体育用品专卖</view>
+    </view>
+    <view class="titleimg-frame">
+      <!--this is image-->
+      <image style="width: 100%; height: 100%; background-color: #eeeeee;" mode="scaleToFill" src="../../resources/myimages/logo.jpg"></image>
+    </view>
+  </view>
+  <!--分界线line-->
+  <view class="style-hr"></view>
+  <view class="labelgroup-body">
+
+  </view>
+</view>
