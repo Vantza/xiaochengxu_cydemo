@@ -14,6 +14,28 @@
   <!--分界线line-->
   <view class="style-hr"></view>
   <view class="labelgroup-body">
-
+    <view class="label-body">
+      <span class="iconfont icon-zuobiaofill"></span>
+      <text bindtap="openLocation">{{locationText}}</text>
+    </view>
+    <view class="label-body">
+      <span class="iconfont icon-shizhongfill"></span>
+      <text>{{businessHours}}</text>
+    </view>
+    <view class="label-body">
+      <span class="iconfont icon-kefufill"></span>
+      <text bindtap="makeCalling">{{phoneNumText}}</text>
+    </view>
+    <view class="classname">
+      <view class="label-body">
+        <span class="iconfont icon-xiangji1fill"></span>
+        <text>{{picText}}</text>
+      </view>
+      <view class="imgGroup" wx:for="{{imageArray}}" wx:for-item="img">
+        <view class="imgPic">
+          <image style="width: 100px; height: 100px; background-color: #eeeeee;" mode="{{img.mode}}" src="{{img.src}}"></image>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

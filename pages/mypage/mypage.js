@@ -1,19 +1,51 @@
 // pages/mypage/mypage.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
-  data: {
-    phoneInfo: []
+  data: { 
+    locationText: '江苏省南通市濠北路华侨花苑10幢10号',
+    businessHours: '09:00-17:00',
+    phoneNumText: '18621924350,(0513)85197186',
+    picText: '门店照片',
+    imageArray: [{
+      mode: 'scaleToFill',
+      src: '../../resources/myimages/logo.jpg'
+    },{
+      mode: 'aspectFit',
+      src: '../../resources/myimages/logo.jpg'
+    }, {
+      mode: 'top',
+      src: '../../resources/myimages/logo.jpg'
+    }]
   },
 
-  //点击头像后进入访问百度网站
-  mytab: function () {
-    wx.getSystemInfo({
-      success: function (res) {
-        console.log(res.model)
-        module.exports(res.model)
+  makeCalling: function () {
+    wx.makePhoneCall({
+      phoneNumber: '12345678900', //此号码并非真实电话号码，仅用于测试
+      success: function () {
+        console.log("拨打电话成功！")
+      },
+      fail: function () {
+        console.log("拨打电话失败！")
+      }
+    })
+  },
+
+  openLocation: function () {
+    wx.openLocation({
+      latitude: '32.03073',
+      longitude: '120.864299',
+      name: '三可体育用品商店 ',
+      address: '江苏省南通市濠北路华侨花苑10幢10号',
+      scale: 28,
+      success: function () {
+        console.log("打开地图成功！")
+      },
+      fail: function () {
+        console.log("打开地图失败！")
       }
     })
   },
