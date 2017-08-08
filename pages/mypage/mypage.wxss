@@ -90,5 +90,14 @@ text {
 .imgGroup {
   margin: 10rpx, 10rpx, 10rpx, 10rpx;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.imgPic {
+  width: 30%;
+  padding-right: 3%;
+  padding-bottom: 2%;
 }

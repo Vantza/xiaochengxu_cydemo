@@ -26,15 +26,17 @@
       <span class="iconfont icon-kefufill"></span>
       <text bindtap="makeCalling">{{phoneNumText}}</text>
     </view>
-    <view class="classname">
+    <view>
       <view class="label-body">
         <span class="iconfont icon-xiangji1fill"></span>
         <text>{{picText}}</text>
       </view>
-      <view class="imgGroup" wx:for="{{imageArray}}" wx:for-item="img">
-        <view class="imgPic">
-          <image style="width: 100px; height: 100px; background-color: #eeeeee;" mode="{{img.mode}}" src="{{img.src}}"></image>
-        </view>
+      <view class="imgGroup">
+        <block wx:for="{{imageArray}}" wx:for-item="img" wx:for-index="imgIdx">
+          <view class="imgPic" data-img-idx="{{imgIdx}}" catchtap="previewlmg">
+            <image style="width: 100px; height: 100px; background-color: #eeeeee;" mode="{{img.mode}}" src="{{img.src}}"></image>
+          </view>
+        </block>
       </view>
     </view>
   </view>
